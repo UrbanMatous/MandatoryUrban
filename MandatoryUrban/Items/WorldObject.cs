@@ -20,13 +20,20 @@ namespace MandatoryUrban.Items
         public AttackItem ContainedAttackItem { get; set; }
         public DefenseItem ContainedDefenseItem { get; set; }
 
+        public int positionX;
+        public int positionY;
+
         /// <summary>
         /// Initializes a new world object with a description.
         /// </summary>
         /// <param name="description"></param>
-        public WorldObject(string description)
+        /// <param positionX="X"></param>
+        /// <param positionY="Y"></param>
+        public WorldObject(string description, int X, int Y)
         {
             Description = description;
+            positionX = X;
+            positionY = Y;
         }
 
         /// <summary>
